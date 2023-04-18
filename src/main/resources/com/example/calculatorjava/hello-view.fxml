@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="10.0" maxWidth="10.0" prefHeight="10.0" prefWidth="10.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.calculatorjava.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <TextField fx:id="textFirst" minHeight="25.0" onAction="#startType" onContextMenuRequested="#startType" onInputMethodTextChanged="#startType" onKeyPressed="#startType" onKeyReleased="#startType" onKeyTyped="#startType" onMouseClicked="#startType" onMouseDragged="#startType" onMouseEntered="#startType" onMousePressed="#startType" onTouchMoved="#startType" onTouchPressed="#startType" onZoom="#startType">
+                    <HBox.margin>
+                        <Insets left="5.0" right="10.0" />
+                    </HBox.margin>
+                </TextField>
+                <Label fx:id="sign" alignment="CENTER" contentDisplay="CENTER" minHeight="25.0" minWidth="12.0" text="+" textAlignment="CENTER" />
+                <TextField fx:id="textSecond" minHeight="25.0">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </HBox.margin>
+                </TextField>
+                <Label alignment="CENTER" contentDisplay="CENTER" minHeight="25.0" minWidth="12.0" text="=" textAlignment="CENTER" />
+                <Label fx:id="result" minHeight="25.0" minWidth="75.0">
+                    <HBox.margin>
+                        <Insets left="10.0" right="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="btnPlus" alignment="CENTER" contentDisplay="CENTER" minHeight="48.0" minWidth="48.0" mnemonicParsing="false" onAction="#pushPlus" text="+" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnMinus" alignment="CENTER" contentDisplay="CENTER" minHeight="48.0" minWidth="48.0" mnemonicParsing="false" onAction="#pushMinus" text="-" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnMul" alignment="CENTER" contentDisplay="CENTER" minHeight="48.0" minWidth="48.0" mnemonicParsing="false" onAction="#pushMul" text="*" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnDiv" alignment="CENTER" contentDisplay="CENTER" minHeight="48.0" minWidth="48.0" mnemonicParsing="false" onAction="#pushDiv" text="/" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnEq" alignment="CENTER" contentDisplay="CENTER" minHeight="48.0" minWidth="48.0" mnemonicParsing="false" onAction="#pushEq" text="=" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>
